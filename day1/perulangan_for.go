@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 func main() {
 
 	//Perulanga tipe pertama
@@ -29,5 +31,13 @@ func main() {
 		}
 
 		println("Cetak", x)
+	}
+
+	//Nested for (Bersarang)
+	for w := 0; w < 7; w++ {
+		fmt.Println("Menaik", w)
+		for d := 10; d > 0; d-- {
+			fmt.Println("Menurun :", d)
+		}
 	}
 }
